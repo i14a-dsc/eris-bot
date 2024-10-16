@@ -1,0 +1,7 @@
+{
+  "editor.indentSize": 2,
+  "terminal.integrated.autoReplies": {
+    "Terminate batch job (Y/N)": "Y\r",
+    "バッチ ジョブを終了しますか (Y/N)?": "Y\r"
+  },
+}

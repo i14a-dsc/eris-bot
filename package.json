@@ -1,0 +1,30 @@
+{
+  "name": "example-bot",
+  "module": "src/main.ts",
+  "main": "dist/main.js",
+  "type": "module",
+  "engineStrict": true,
+  "devDependencies": {
+    "@types/bun": "^1.1.8",
+    "@types/node": "^20.16.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@eslint/compat": "^1.1.1",
+    "@typescript-eslint/parser": "^8.3.0",
+    "dotenv": "^16.4.5",
+    "eris": "^0.18.0",
+    "eslint": "^9.9.1",
+    "prettier": "^3.3.3"
+  },
+  "scripts": {
+    "start": "rm -rf dist && tsc && node .",
+    "build": "rm -rf dist && tsc",
+    "rmcache": "rm -rf node_modules/.cache && rm -rf dist",
+    "lint": "eslint",
+    "watch": "tsc -w",
+    "fmt": "bun x prettier --write ."
+  }
+}
